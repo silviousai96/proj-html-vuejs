@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <link rel="stylesheet" href="dist/app.css">
     <title>Document</title>
@@ -12,7 +14,70 @@
 <body>
 
     <div id="root">
-        
+        <!-- inizio header  -->
+        <header>
+            <!-- inizio top nav -->
+            <nav class="top-nav">
+                
+                <div class="lang">
+                    <span>English</span> 
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+
+                <div class="nav-list-menu" >
+                    
+
+                    <ul class="nav-list">
+                        <li v-for="link in navLinks"> <a href="#">{{ link }}</a> </li>
+                    </ul>
+
+                    <ul class="nav-list-icon">
+                        <li> <a href="#"><i class="fab fa-twitter"></i></a> </li>
+                        <li> <a href="#"><i class="fab fa-instagram"></i></a> </li>
+                        <li> <a href="#"><i class="fab fa-behance"></i></a> </li>
+                        <li> <a href="#"><i class="fas fa-volleyball-ball"></i></a></li>
+                        <li> <a href="#"><i class="fab fa-git"></i></a></li>
+                        <li> <a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li> <a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+            <!-- fine top nav -->
+
+            <!-- inizio bottom nav -->
+            <nav class="bottom-nav">
+                
+                <div class="logo">
+                    <img src="img/MasterStudy_logo.svg" alt="">
+                </div>
+
+                <div class="nav-input">
+                    <span> <a href="#"><i class="fas fa-bars"></i> CATEGORY</a> </span>
+                    <input type="text" placeholder="Search courses">
+                    <span class="search"> <i class="fas fa-search"></i> </span>
+                </div>
+ 
+                <div class="nav-info">
+                    <span> <a href="#"> <i class="fas fa-bullhorn"></i> Become an instructor</a></span>
+                    <span> <a href="#"> <i class="fas fa-briefcase"></i> For enterprise</a> </span>
+                </div>
+
+                <div class="nav-sign">
+                    <span> <a href="#"><i class="far fa-user"></i>Log in</a> </span>
+                    <span><a class="button-nav" href="#">SIGN UP</a> </span>
+                    <span> <a href="#"><i class="fas fa-paperclip"></i></a> </span>
+                </div>
+
+            </nav>
+            <!-- fine bottom nav -->
+
+        </header>
+        <!-- fine header  -->
+
+        <div class="jumbotron">
+            
+        </div>
     </div>
     
     <script type="text/javascript" src="dist/app.js"></script>

@@ -1,0 +1,119 @@
+header {
+    @include narrow-section;
+    font-size: $nav_font;
+    .top-nav {
+        color: $nav_color;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        border-bottom: 1px solid $border_color;
+        
+        .nav-list-menu {
+            display: flex;
+
+            .nav-list {
+                display: flex;
+                li {
+                    padding-left: 10px;
+                    a {
+                        color: $nav_color; 
+                    }
+                }
+            
+            }
+        }
+
+        .nav-list-icon {
+            display: flex;
+            padding-left: 20px;
+            li {
+                padding-left: 15px;
+                a {
+                    color: $nav_color; 
+                }
+            }
+        }
+    
+    }
+
+    .bottom-nav {
+        display: flex;
+        align-items: center; 
+        padding:20px 0;
+        color: $font_color;    
+        justify-content: space-between; 
+        .logo {
+            img {
+                width: 200px;
+            }
+        }
+
+        .nav-input {
+            padding: 0 20px;
+            
+            span {
+                a {
+                    color: $nav_color;
+                }
+            }
+            input {
+                width: 300px;
+                padding: 12px;
+                margin-left: 8px;
+                border-style:none;
+                background-color: $input_color;
+            }
+
+            .search {
+                color: white;
+                width: 40px;
+                background-color: $button_color;
+                padding: 10px 17px;
+                padding-bottom: 11px;
+                cursor: pointer;
+            }
+        }
+
+        .nav-info {
+            i {
+                color: $button_color;
+            }
+
+            a {
+                color: $font_color;
+            }
+
+            span:last-child {
+                padding-left: 10px;
+            }
+        }
+
+        .nav-sign {
+            padding-left: 15px;
+
+            span {
+                color: $button_color;
+                padding-left: 10px;
+                i {
+                    padding-right: 5px;
+                }
+            }
+
+            .button-nav {
+                background-color: $button_color;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 25px;
+            }
+        }
+
+
+        
+
+
+    }
+
+
+
+
+}
