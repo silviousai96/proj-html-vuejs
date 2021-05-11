@@ -7,7 +7,25 @@
     width: 50%;
 }
 
+@mixin hover-button {
+    .button-blue {
+        &:hover {
+            background-color: $hover_color;
+        }
+    }
+}
+
 @mixin margin-features {
     width: 70%;
     margin: auto;
+}
+
+@mixin plate-base {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    color: white;
+    font-size: 11px;
+    border-radius: 3px;
+    padding:5px 10px;
 }

@@ -128,8 +128,8 @@ header .bottom-nav .nav-sign span a {
 header .bottom-nav .nav-sign div {
   padding: 0 10px;
 }
-header .bottom-nav .nav-sign div:hover {
-  transform: translate(5px, 5px);
+header .bottom-nav .nav-sign div .button-blue:hover {
+  background-color: #1654b4;
 }
 header .bottom-nav .nav-sign div .button-blue {
   color: white;
@@ -159,8 +159,8 @@ main .jumbotron .jumbo-left h3 {
   padding-bottom: 50px;
   font-weight: 400;
 }
-main .jumbotron .jumbo-left div:hover {
-  transform: translate(5px, 5px);
+main .jumbotron .jumbo-left div .button-blue:hover {
+  background-color: #1654b4;
 }
 main .jumbotron .jumbo-right {
   width: 50%;
@@ -272,8 +272,8 @@ main .limitless p {
   padding-bottom: 30px;
   font-size: 18px;
 }
-main .limitless div:hover {
-  transform: translate(5px, 5px);
+main .limitless div .button-blue:hover {
+  background-color: #1654b4;
 }
 main .recent-courses h2 {
   text-align: center;
@@ -310,16 +310,78 @@ main .recent-courses .rc-first-row {
 main .recent-courses .rc-first-row .course-card {
   width: calc(100% / 6 - 10px);
   border: 1px solid #e4e8ed;
+  position: relative;
+  margin-bottom: 30px;
+}
+main .recent-courses .rc-first-row .course-card .plate-green {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  color: white;
+  font-size: 11px;
+  border-radius: 3px;
+  padding: 5px 10px;
+  background-color: #4bd7a8;
+}
+main .recent-courses .rc-first-row .course-card .plate-red {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  color: white;
+  font-size: 11px;
+  border-radius: 3px;
+  padding: 5px 10px;
+  background-color: #fd0303;
+}
+main .recent-courses .rc-first-row .course-card .plate-yellow {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  color: white;
+  font-size: 11px;
+  border-radius: 3px;
+  padding: 5px 10px;
+  background-color: #f09b23;
+}
+main .recent-courses .rc-first-row .course-card:nth-child(2) {
+  border: 1px solid #fecc4f;
 }
 main .recent-courses .rc-first-row .course-card .course-card-text {
   padding: 10px;
 }
+main .recent-courses .rc-first-row .course-card .course-card-text h6 {
+  color: gray;
+}
 main .recent-courses .rc-first-row .course-card .course-card-text h5 {
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
 main .recent-courses .rc-first-row .course-card .course-card-text div {
   font-size: 13px;
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
+  position: relative;
+}
+main .recent-courses .rc-first-row .course-card .course-card-text div span {
+  display: flex;
+  align-items: center;
+}
+main .recent-courses .rc-first-row .course-card .course-card-text div span:last-child {
+  font-weight: bold;
+}
+main .recent-courses .rc-first-row .course-card .course-card-text div .reduced-price {
+  position: absolute;
+  bottom: 40%;
+  right: 0;
+  font-size: 12px;
+  color: gray;
+  text-decoration: line-through;
+}
+main .recent-courses .rc-button {
+  text-align: center;
+  margin-top: 40px;
+}
+main .recent-courses .rc-button .button-blue:hover {
+  background-color: #1654b4;
 }
