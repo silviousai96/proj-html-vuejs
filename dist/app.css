@@ -20,6 +20,21 @@ ul {
   list-style-type: none;
 }
 
+.button-blue {
+  background-color: #1a5eca;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.card-description {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*HEADER*/
 header {
   width: 90%;
   margin: auto;
@@ -57,8 +72,9 @@ header .top-nav .nav-list-icon li a {
 header .bottom-nav {
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
   padding: 20px 0;
-  color: #292629;
+  color: #2d2e34;
   justify-content: space-between;
 }
 header .bottom-nav .logo img {
@@ -89,7 +105,7 @@ header .bottom-nav .nav-info i {
   color: #1a5eca;
 }
 header .bottom-nav .nav-info a {
-  color: #292629;
+  color: #2d2e34;
 }
 header .bottom-nav .nav-info span:last-child {
   padding-left: 10px;
@@ -98,15 +114,131 @@ header .bottom-nav .nav-sign {
   padding-left: 15px;
 }
 header .bottom-nav .nav-sign span {
-  color: #1a5eca;
   padding-left: 10px;
 }
 header .bottom-nav .nav-sign span i {
   padding-right: 5px;
 }
-header .bottom-nav .nav-sign .button-nav {
-  background-color: #1a5eca;
+header .bottom-nav .nav-sign span a {
+  color: #1a5eca;
+}
+header .bottom-nav .nav-sign .button-blue {
   color: white;
-  padding: 10px 20px;
-  border-radius: 25px;
+}
+
+/*MAIN*/
+main {
+  color: #2d2e34;
+}
+main .jumbotron {
+  display: flex;
+  height: 500px;
+  margin-left: 15%;
+}
+main .jumbotron .jumbo-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .jumbotron .jumbo-left h2 {
+  font-size: 50px;
+  font-weight: 300;
+}
+main .jumbotron .jumbo-left h3 {
+  padding-top: 10px;
+  padding-bottom: 50px;
+  font-weight: 400;
+}
+main .jumbotron .jumbo-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../img/base.png");
+  background-position: center;
+  background-size: 500px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+main .jumbotron .jumbo-right .book-one {
+  width: 25%;
+  position: absolute;
+  top: 32%;
+  right: 13%;
+}
+main .jumbotron .jumbo-right .book-two {
+  width: 30%;
+  position: absolute;
+  bottom: 18%;
+  left: 40%;
+}
+main .jumbotron .jumbo-right .bubble {
+  width: 10%;
+  position: absolute;
+  top: 24%;
+  right: 13%;
+}
+main .jumbotron .jumbo-right .magnifier {
+  width: 10%;
+  position: absolute;
+  bottom: 29%;
+  right: 17%;
+}
+main .features {
+  width: 70%;
+  margin: auto;
+}
+main .features .top-cards {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+main .features .top-cards .single-card-top {
+  width: calc( 100% / 3 - 15px);
+  background-color: #f2f6fb;
+  padding: 20px;
+  font-size: 14px;
+}
+main .features .top-cards .single-card-top i {
+  color: #1a5eca;
+  font-size: 40px;
+}
+main .features .top-cards .single-card-top h3 {
+  font-weight: 600;
+  padding: 25px 0;
+}
+main .features .top-cards .single-card-top p {
+  color: gray;
+  padding-bottom: 10px;
+}
+main .features .top-cards .single-card-top:hover {
+  transform: scale(1.1);
+}
+main .features .top-cards .single-card-top:hover p {
+  color: #2d2e34;
+}
+main .features .bottom-cards {
+  display: flex;
+}
+main .features .bottom-cards .software-card {
+  width: 66%;
+}
+main .features .bottom-cards .overlapping-container {
+  width: 32%;
+  margin-left: 20px;
+}
+main .features .bottom-cards .overlapping-container .overlapping-card {
+  width: 100%;
+}
+main .features .bottom-cards .overlapping-container .overlapping-card:first-child {
+  margin-bottom: 23px;
+}
+main .features .bottom-cards-second {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+main .features .bottom-cards-second .single-card-bottom {
+  width: calc( 100% / 3 - 15px);
 }

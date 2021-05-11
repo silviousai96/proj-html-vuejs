@@ -20,3 +20,17 @@ ul {
     list-style-type: none;
 }
 
+.button-blue {
+    background-color: $button_color;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card-description {
+    display: flex;
+    justify-content: space-between;
+}
+

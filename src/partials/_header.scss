@@ -1,3 +1,4 @@
+/*HEADER*/
 header {
     @include narrow-section;
     font-size: $nav_font;
@@ -39,6 +40,7 @@ header {
     .bottom-nav {
         display: flex;
         align-items: center; 
+        flex-wrap: nowrap;
         padding:20px 0;
         color: $font_color;    
         justify-content: space-between; 
@@ -92,28 +94,22 @@ header {
             padding-left: 15px;
 
             span {
-                color: $button_color;
+                
                 padding-left: 10px;
                 i {
                     padding-right: 5px;
                 }
+                a {
+                    color: $button_color;
+                }
             }
 
-            .button-nav {
-                background-color: $button_color;
+            .button-blue {
                 color: white;
-                padding: 10px 20px;
-                border-radius: 25px;
-            }
+            }     
         }
 
 
-        
-
-
     }
-
-
-
 
 }
