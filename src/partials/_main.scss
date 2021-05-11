@@ -21,6 +21,11 @@ main {
                 padding-bottom: 50px;
                 font-weight: 400;
             }
+            div {
+                &:hover {
+                    transform: translate(5px, 5px);
+                }
+            }
 
         }
 
@@ -122,6 +127,82 @@ main {
             .single-card-bottom {
 
                 width: calc( 100% / 3 - 15px); 
+            }
+        }
+    }
+
+    .limitless {
+        height: 500px;
+        margin-top: 80px;
+        padding-left: 15%;
+        background-image: url('../img/limitless.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        h2 {
+            padding-top: 50px;
+            font-size: 40px;
+            font-weight: 300;
+        }
+        p {
+            padding-top: 20px;
+            padding-bottom: 30px;
+            font-size: 18px;
+        }
+        div {
+            &:hover {
+                transform: translate(5px, 5px);
+            }
+        }
+    }
+
+    .recent-courses {
+        h2 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 300;
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            padding: 25px 0;
+            li {
+                margin-right: 20px;
+                &:first-child {
+                    background-color: $secondary-color;                    
+                    padding: 10px;
+                    margin-top: -9px;
+                    border-radius: 25px;
+                    a {
+                        color: $nav_color;
+                    }
+                }
+                
+                a {
+                    color: $button_color;
+                }
+            }
+        }
+        .rc-first-row {
+            @include narrow-section;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .course-card {
+                width: calc(100% / 6 - 10px);
+                border: 1px solid $border_color;
+
+                .course-card-text {
+                    padding: 10px;
+                    h5 {
+                        padding: 10px 0;
+                    }
+                    div {
+                        font-size: 13px;
+                        display: flex;
+                        justify-content: space-between;
+                        padding-top: 10px;
+                    }
+                }
             }
         }
     }

@@ -52,7 +52,8 @@ header {
 
         .nav-input {
             padding: 0 20px;
-            
+            display: flex;
+            align-items: center;
             span {
                 a {
                     color: $nav_color;
@@ -77,6 +78,7 @@ header {
         }
 
         .nav-info {
+            display: flex;
             i {
                 color: $button_color;
             }
@@ -92,10 +94,9 @@ header {
 
         .nav-sign {
             padding-left: 15px;
-
+            display: flex;
             span {
-                
-                padding-left: 10px;
+                                
                 i {
                     padding-right: 5px;
                 }
@@ -103,10 +104,18 @@ header {
                     color: $button_color;
                 }
             }
+            div {
+                padding: 0 10px;
+                &:hover {
+                    transform: translate(5px, 5px);
+                }
 
-            .button-blue {
-                color: white;
-            }     
+                .button-blue {
+                    color: white;
+                }     
+            }            
+            
+
         }
 
 
