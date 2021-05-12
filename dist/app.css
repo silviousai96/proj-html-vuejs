@@ -29,6 +29,85 @@ ul {
   font-size: 14px;
 }
 
+.course-row {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.course-row .course-card {
+  width: calc(100% / 6 - 10px);
+  border: 1px solid #e4e8ed;
+  position: relative;
+  margin-bottom: 30px;
+}
+.course-row .course-card .plate-green {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  color: white;
+  font-size: 11px;
+  border-radius: 3px;
+  padding: 5px 10px;
+  background-color: #4bd7a8;
+}
+.course-row .course-card .plate-red {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  color: white;
+  font-size: 11px;
+  border-radius: 3px;
+  padding: 5px 10px;
+  background-color: #fd0303;
+}
+.course-row .course-card .plate-yellow {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  color: white;
+  font-size: 11px;
+  border-radius: 3px;
+  padding: 5px 10px;
+  background-color: #f09b23;
+}
+.course-row .course-card:nth-child(2) {
+  border: 1px solid #fecc4f;
+}
+.course-row .course-card .course-card-text {
+  padding: 10px;
+}
+.course-row .course-card .course-card-text h6 {
+  color: gray;
+}
+.course-row .course-card .course-card-text h5 {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.course-row .course-card .course-card-text div {
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  position: relative;
+}
+.course-row .course-card .course-card-text div span {
+  display: flex;
+  align-items: center;
+}
+.course-row .course-card .course-card-text div span:last-child {
+  font-weight: bold;
+}
+.course-row .course-card .course-card-text div .reduced-price {
+  position: absolute;
+  bottom: 40%;
+  right: 0;
+  font-size: 12px;
+  color: gray;
+  text-decoration: line-through;
+}
+
 .card-description {
   display: flex;
   justify-content: space-between;
@@ -96,7 +175,7 @@ header .bottom-nav .nav-input input {
   background-color: #f0f2f5;
 }
 header .bottom-nav .nav-input .search {
-  color: white;
+  color: #ffffff;
   background-color: #1a5eca;
   padding: 10px 17px;
   padding-bottom: 11px;
@@ -299,84 +378,6 @@ main .recent-courses ul li:first-child a {
 main .recent-courses ul li a {
   color: #1a5eca;
 }
-main .recent-courses .rc-first-row {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-main .recent-courses .rc-first-row .course-card {
-  width: calc(100% / 6 - 10px);
-  border: 1px solid #e4e8ed;
-  position: relative;
-  margin-bottom: 30px;
-}
-main .recent-courses .rc-first-row .course-card .plate-green {
-  position: absolute;
-  top: 3%;
-  right: 3%;
-  color: white;
-  font-size: 11px;
-  border-radius: 3px;
-  padding: 5px 10px;
-  background-color: #4bd7a8;
-}
-main .recent-courses .rc-first-row .course-card .plate-red {
-  position: absolute;
-  top: 3%;
-  right: 3%;
-  color: white;
-  font-size: 11px;
-  border-radius: 3px;
-  padding: 5px 10px;
-  background-color: #fd0303;
-}
-main .recent-courses .rc-first-row .course-card .plate-yellow {
-  position: absolute;
-  top: 3%;
-  right: 3%;
-  color: white;
-  font-size: 11px;
-  border-radius: 3px;
-  padding: 5px 10px;
-  background-color: #f09b23;
-}
-main .recent-courses .rc-first-row .course-card:nth-child(2) {
-  border: 1px solid #fecc4f;
-}
-main .recent-courses .rc-first-row .course-card .course-card-text {
-  padding: 10px;
-}
-main .recent-courses .rc-first-row .course-card .course-card-text h6 {
-  color: gray;
-}
-main .recent-courses .rc-first-row .course-card .course-card-text h5 {
-  padding-top: 10px;
-  padding-bottom: 15px;
-}
-main .recent-courses .rc-first-row .course-card .course-card-text div {
-  font-size: 13px;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 10px;
-  position: relative;
-}
-main .recent-courses .rc-first-row .course-card .course-card-text div span {
-  display: flex;
-  align-items: center;
-}
-main .recent-courses .rc-first-row .course-card .course-card-text div span:last-child {
-  font-weight: bold;
-}
-main .recent-courses .rc-first-row .course-card .course-card-text div .reduced-price {
-  position: absolute;
-  bottom: 40%;
-  right: 0;
-  font-size: 12px;
-  color: gray;
-  text-decoration: line-through;
-}
 main .recent-courses .rc-button {
   text-align: center;
   margin-top: 40px;
@@ -395,10 +396,14 @@ main .proud {
   text-align: center;
 }
 main .proud h2 {
-  padding-top: 50px;
-  padding-bottom: 25px;
+  text-align: center;
   font-size: 40px;
   font-weight: 300;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+main .proud p {
+  padding-bottom: 40px;
 }
 main .proud .accomplishments {
   display: flex;
@@ -457,4 +462,65 @@ main .newsletter .newsletter-input div .subscribe {
   padding: 10px 17px;
   font-size: 13px;
   cursor: pointer;
+}
+main .popular-courses {
+  background-color: #f2f6fb;
+}
+main .popular-courses h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+main .popular-courses p {
+  text-align: center;
+  padding-bottom: 50px;
+}
+main .popular-courses .course-card {
+  background-color: #ffffff;
+}
+main .popular-courses .pb-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+main .popular-courses .pb-container .p-button {
+  background-color: #ffffff;
+}
+main .popular-courses .pb-container .p-button:hover {
+  background-color: #457992;
+  color: #ffffff;
+}
+main .popular-courses .pb-container .p-button i {
+  padding: 10px 15px;
+  color: #e4e8ed;
+  border: 1px solid #e4e8ed;
+}
+main .become-setup {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+main .become-setup .bs-column {
+  width: 49%;
+  height: 300px;
+  border: 1px solid #e4e8ed;
+  display: flex;
+  align-items: center;
+}
+main .become-setup .bs-column .bs-image {
+  width: 40%;
+  padding: 20px;
+}
+main .become-setup .bs-column .bs-text h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+main .become-setup .bs-column .bs-text p {
+  padding-top: 20px;
+  margin-bottom: 35px;
 }

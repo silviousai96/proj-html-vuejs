@@ -30,6 +30,72 @@ ul {
 
 }
 
+.course-row {
+    @include narrow-section;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    .course-card {
+        width: calc(100% / 6 - 10px);
+        border: 1px solid $border_color;
+        position: relative;
+        margin-bottom: 30px;
+        .plate-green {
+            @include plate-base;
+            background-color: $eleven_color;
+        }
+    
+        .plate-red {
+            @include plate-base;
+            background-color: $eight_color;
+        }
+    
+        .plate-yellow {
+            @include plate-base;
+            background-color: #f09b23;
+        }
+    
+        &:nth-child(2) {
+            border: 1px solid $seven_color;
+        }
+        .course-card-text {
+            padding: 10px;
+            h6 {
+                color: $nav_color;
+            }
+            h5 {
+                padding-top: 10px;
+                padding-bottom: 15px;
+            }
+            div {
+                font-size: 13px;
+                display: flex;
+                justify-content: space-between;
+                padding-top: 10px;
+                position: relative;
+                span {
+                    display: flex;
+                    align-items: center;
+                }
+                span:last-child {
+                    font-weight: bold;
+                }
+                .reduced-price {
+                    position: absolute;
+                    bottom: 40%;
+                    right: 0;
+                    font-size: 12px;
+                    color: $nav_color;
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+}
+
+
+
 .card-description {
     display: flex;
     justify-content: space-between;

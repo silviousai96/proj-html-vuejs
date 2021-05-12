@@ -153,9 +153,7 @@ main {
 
     .recent-courses {
         h2 {
-            text-align: center;
-            font-size: 40px;
-            font-weight: 300;
+            @include h2-style;
         }
         ul {
             display: flex;
@@ -178,68 +176,7 @@ main {
                 }
             }
         }
-        .rc-first-row {
-            @include narrow-section;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            .course-card {
-                width: calc(100% / 6 - 10px);
-                border: 1px solid $border_color;
-                position: relative;
-                margin-bottom: 30px;
-                .plate-green {
-                    @include plate-base;
-                    background-color: $eleven_color;
-                }
 
-                .plate-red {
-                    @include plate-base;
-                    background-color: $eight_color;
-                }
-
-                .plate-yellow {
-                    @include plate-base;
-                    background-color: #f09b23;
-                }
-
-                &:nth-child(2) {
-                    border: 1px solid $seven_color;
-                }
-                .course-card-text {
-                    padding: 10px;
-                    h6 {
-                        color: $nav_color;
-                    }
-                    h5 {
-                        padding-top: 10px;
-                        padding-bottom: 15px;
-                    }
-                    div {
-                        font-size: 13px;
-                        display: flex;
-                        justify-content: space-between;
-                        padding-top: 10px;
-                        position: relative;
-                        span {
-                            display: flex;
-                            align-items: center;
-                        }
-                        span:last-child {
-                            font-weight: bold;
-                        }
-                        .reduced-price {
-                            position: absolute;
-                            bottom: 40%;
-                            right: 0;
-                            font-size: 12px;
-                            color: $nav_color;
-                            text-decoration: line-through;
-                        }
-                    }
-                }
-            }
-        }
         .rc-button {
             @include hover-button;
             text-align: center;
@@ -257,10 +194,12 @@ main {
         height: 550px;
         text-align: center;
         h2 {
-            padding-top: 50px;
-            padding-bottom: 25px;
-            font-size: 40px;
-            font-weight: 300;
+            @include h2-style;
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+        p {
+            padding-bottom: 40px;
         }
         .accomplishments {
             display: flex;
@@ -328,6 +267,70 @@ main {
             }
 
 
+        }
+    }
+
+    .popular-courses {
+        background-color: $secondary-color;
+        h2 {
+            @include h2-style;
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+        p {
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .course-card {
+            background-color: $primary_color;
+        }
+
+        .pb-container {
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+            padding-bottom: 50px;
+            .p-button {
+                background-color: $primary_color;
+                &:hover {
+                    background-color: $hover_color-two;
+                    color: $primary_color;
+                }
+                i {
+                    padding:10px 15px;
+                    color: $border_color;
+                    border: 1px solid $border_color;
+                }
+            }
+        }
+    }
+
+    .become-setup {
+        @include narrow-section;
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0;
+        .bs-column {
+            width: 49%;
+            height: 300px;
+            border: 1px solid $border_color;
+            display: flex;
+            align-items: center;
+            .bs-image {
+                width: 40%;
+                padding: 20px;
+            }
+            .bs-text {
+                h2 {
+                    font-size: 30px;
+                    font-weight: 500;
+                }
+                p {
+                    padding-top: 20px;
+                    margin-bottom: 35px;
+                }
+            }
         }
     }
 }
