@@ -524,3 +524,44 @@ main .become-setup .bs-column .bs-text p {
   padding-top: 20px;
   margin-bottom: 35px;
 }
+main .become-setup .bs-column .bs-text .button-blue:hover {
+  background-color: #4bd7a8;
+}
+main .review {
+  height: 500px;
+  background-image: url("../img/brooke-cagle-224821-unsplash-1-1920x700.jpg");
+  background-size: cover;
+  padding-left: 15%;
+  padding-top: 60px;
+}
+main .review .bubble {
+  width: 50%;
+  background-color: #ffffff;
+  padding: 50px;
+  position: relative;
+}
+main .review .bubble h2 {
+  font-weight: 300;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+main .review .bubble p {
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+main .review .bubble h4:last-child {
+  font-size: 15px;
+}
+main .review .bubble:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 13px solid transparent;
+  border-left-color: white;
+  border-right: 0;
+  margin-top: -13px;
+  margin-right: -13px;
+}
