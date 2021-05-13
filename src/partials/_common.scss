@@ -41,6 +41,24 @@ ul {
         border: 1px solid $border_color;
         position: relative;
         margin-bottom: 30px;
+        .trapezoid {
+            position: absolute;
+            top: 7px;
+            left: -19px;
+            border-bottom: 25px solid $features_color;
+            border-left: 21px solid transparent;
+            border-right: 28px solid transparent;
+            height: 0;
+            width: 88px;
+            transform: rotate(319deg);
+            color: white;
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            span {
+                padding-top: 22px;
+            }
+        }
         .plate-green {
             @include plate-base;
             background-color: $eleven_color;
@@ -53,7 +71,7 @@ ul {
     
         .plate-yellow {
             @include plate-base;
-            background-color: #f09b23;
+            background-color: $features_color;
         }
     
         &:nth-child(2) {
@@ -93,8 +111,6 @@ ul {
         }
     }
 }
-
-
 
 .card-description {
     display: flex;

@@ -42,6 +42,24 @@ ul {
   position: relative;
   margin-bottom: 30px;
 }
+.course-row .course-card .trapezoid {
+  position: absolute;
+  top: 7px;
+  left: -19px;
+  border-bottom: 25px solid #f09b23;
+  border-left: 21px solid transparent;
+  border-right: 28px solid transparent;
+  height: 0;
+  width: 88px;
+  transform: rotate(319deg);
+  color: white;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+}
+.course-row .course-card .trapezoid span {
+  padding-top: 22px;
+}
 .course-row .course-card .plate-green {
   position: absolute;
   top: 3%;
@@ -118,6 +136,8 @@ header {
   width: 90%;
   margin: auto;
   font-size: 13px;
+  /*Top-nav*/
+  /*Bottom-nav*/
 }
 header .top-nav {
   color: gray;
@@ -216,6 +236,15 @@ header .bottom-nav .nav-sign div .button-blue {
 /*MAIN*/
 main {
   color: #273044;
+  /*Jumbotron*/
+  /*Features*/
+  /*Limitless*/
+  /*Recent courses*/
+  /*Proud*/
+  /*Newsletter*/
+  /*Popular courses*/
+  /*Become-setup*/
+  /*Review*/
 }
 main .jumbotron {
   display: flex;
@@ -564,4 +593,80 @@ main .review .bubble:after {
   border-right: 0;
   margin-top: -13px;
   margin-right: -13px;
+}
+
+/*FOOTER*/
+footer {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: #273044;
+  padding-top: 60px;
+}
+footer .f-column {
+  width: 47%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .f-column div {
+  width: 48%;
+}
+footer .f-column div h3 {
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+footer .f-column div p {
+  font-size: 11px;
+}
+footer .f-column div p a {
+  color: #1a5eca;
+}
+footer .f-column div .social-links {
+  padding-top: 10px;
+}
+footer .f-column div .social-links i {
+  padding-right: 10px;
+  color: gray;
+}
+footer .f-column div .tel {
+  padding-top: 20px;
+}
+footer .f-column div .email {
+  padding-top: 10px;
+  color: gray;
+}
+footer .f-column div .blog-links {
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+}
+footer .f-column div .blog-links img {
+  width: 80px;
+}
+footer .f-column div .blog-links div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  padding-left: 20px;
+}
+footer .f-column div .blog-links p a {
+  color: gray;
+}
+footer .f-column .f-list h3 {
+  margin-right: 10px;
+}
+footer .f-column .f-list .f-list-column {
+  display: inline-block;
+  font-size: 13px;
+}
+footer .f-column .f-list .f-list-column ul {
+  list-style-type: disc;
+}
+footer .f-column .f-list .f-list-column ul li {
+  padding-bottom: 5px;
+}
+footer .f-column .f-list .f-list-column ul li a {
+  color: #273044;
 }

@@ -2,6 +2,8 @@
 header {
     @include narrow-section;
     font-size: $nav_font;
+
+    /*Top-nav*/
     .top-nav {
         color: $nav_color;
         display: flex;
@@ -10,7 +12,7 @@ header {
         border-bottom: 1px solid $border_color;
         
         .nav-list-menu {
-            display: flex;
+            display: flex;            
 
             .nav-list {
                 display: flex;
@@ -36,7 +38,8 @@ header {
         }
     
     }
-
+    
+    /*Bottom-nav*/
     .bottom-nav {
         display: flex;
         align-items: center; 
@@ -112,9 +115,7 @@ header {
                 }     
             }            
             
-
         }
-
 
     }
 

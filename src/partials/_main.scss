@@ -2,6 +2,8 @@
 
 main {
     color: $font_color;
+
+    /*Jumbotron*/
     .jumbotron {
         display: flex;
         height: 500px;
@@ -65,7 +67,7 @@ main {
 
         }
     }
-
+    /*Features*/
     .features {
         @include margin-features;
         .top-cards {
@@ -129,6 +131,7 @@ main {
         }
     }
 
+    /*Limitless*/
     .limitless {
         height: 500px;
         margin-top: 80px;
@@ -151,6 +154,7 @@ main {
         }
     }
 
+    /*Recent courses*/
     .recent-courses {
         h2 {
             @include h2-style;
@@ -185,6 +189,7 @@ main {
         }
     }
 
+    /*Proud*/
     .proud {
         background-color: $secondary-color;
         background-image: url('../img/we_proud.png');
@@ -224,6 +229,7 @@ main {
         }
     }
 
+    /*Newsletter*/
     .newsletter {
         background-color: $eleven-color;
         padding: 50px 15%;
@@ -269,6 +275,7 @@ main {
         }
     }
 
+    /*Popular courses*/
     .popular-courses {
         background-color: $secondary-color;
         h2 {
@@ -305,6 +312,7 @@ main {
         }
     }
 
+    /*Become-setup*/
     .become-setup {
         @include narrow-section;
         display: flex;
@@ -338,6 +346,7 @@ main {
         }
     }
 
+    /*Review*/
     .review {
         height: 500px;
         background-image: url("../img/brooke-cagle-224821-unsplash-1-1920x700.jpg");
