@@ -11,6 +11,12 @@ header {
         padding: 15px 0;
         border-bottom: 1px solid $border_color;
         
+        .lang {
+            a {
+                color: $nav_color;
+            }
+        }
+
         .nav-list-menu {
             display: flex;            
 

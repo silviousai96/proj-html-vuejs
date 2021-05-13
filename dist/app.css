@@ -146,6 +146,9 @@ header .top-nav {
   padding: 15px 0;
   border-bottom: 1px solid #e4e8ed;
 }
+header .top-nav .lang a {
+  color: gray;
+}
 header .top-nav .nav-list-menu {
   display: flex;
 }
